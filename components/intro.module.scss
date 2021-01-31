@@ -1,0 +1,21 @@
+@import '../styles/config';
+
+.introduction {
+	margin-top: 20vh;
+}
+.intro {
+	display: flex;
+	justify-content: space-around;
+	.header {
+		font-weight: 400;
+		font-size: 3rem;
+		margin: 4px;
+	}
+}
+
+.underline {
+	background-color: #fff;
+	width: 100%;
+	margin: 0 auto;
+	height: 2px;
+}

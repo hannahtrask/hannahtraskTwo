@@ -1,0 +1,161 @@
+.container {
+	height: 100vh;
+	padding: 0 0.5rem;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	background-image: url('../images/alan-carrillo-OJFI4qUmKWU-unsplash.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	.svg {
+		width: 35px;
+		height: 35px;
+	}
+	.aboutContainer {
+		margin: 64px;
+		border: 1px solid #fff;
+		border-radius: 4px;
+		background-color: rgba(0, 0, 0, 0.7);
+		padding: 32px;
+		width: 40vw;
+		.header {
+			font-family: 'Open Sans Condensed', sans-serif;
+			font-weight: 900;
+			letter-spacing: 1px;
+		}
+		.textTwo {
+			letter-spacing: 1px;
+		}
+		.about {
+			border-radius: 50%;
+			height: auto;
+			width: auto;
+			max-height: 400px;
+			max-width: 400px;
+			border: 2px solid white;
+		}
+	}
+
+	.button {
+		margin-top: 32px;
+		border: none;
+		background-color: #fff;
+		padding: 16px;
+		font-family: 'Raleway', sans-serif;
+	}
+	.button:focus {
+		outline: none !important;
+		border-color: #113543;
+		box-shadow: 0 0 4px #113543;
+	}
+}
+
+.svg {
+	transform: rotate(35deg);
+}
+
+/* 
+** Change this if you need to modify
+** the amount of lines displayed
+*/
+$total-lines: 6;
+
+/*
+** Leave these unless you want
+** to open a whole can of worms
+*/
+$left-offset: 29px;
+$clip-height: 35px;
+$line-height: $clip-height - 5px;
+
+/*
+** Apply styles to the parent element
+*/
+.words {
+	margin-right: 10vw;
+	margin-top: 20vh;
+	padding: 80px 0;
+	font-family: 'Raleway', Helvetica, Arial, sans-serif;
+	font-size: 32px;
+	font-weight: 400;
+	text-transform: uppercase;
+	// Sort out nasty text fuzz
+	transform: translate3d(0, 0, 0);
+	-webkit-font-smoothing: antialiased;
+	-webkit-text-size-adjust: 100%;
+}
+
+/*
+** Apply common styles to each line of text
+*/
+.wordsLine {
+	height: $clip-height;
+	overflow: hidden;
+	position: relative;
+
+	// Change the perspective of each alternating line
+	&:nth-child(odd) {
+		transform: skew(60deg, -30deg) scaleY(0.66667);
+	}
+	&:nth-child(even) {
+		transform: skew(0deg, -30deg) scaleY(1.33333);
+	}
+
+	// Loop over the total lines and apply a left offset
+	@for $i from 1 through $total-lines + 1 {
+		&:nth-child(#{$i}) {
+			left: $left-offset * $i;
+		}
+	}
+}
+
+/*
+** Fine-grained text styles
+*/
+.text {
+	height: $clip-height;
+	line-height: $line-height;
+	padding: 0 10px;
+	transition: all 0.4s ease-in-out;
+	transform: translate3d(0, 0, 0);
+	vertical-align: top;
+	white-space: nowrap;
+}
+
+/*
+** The hover interaction
+*/
+.words:hover {
+	.text {
+		transform: translate3d(0, -($clip-height), 0);
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.words {
+		display: none;
+	}
+	.svg {
+		display: none;
+	}
+	.container {
+		width: 100vw;
+		.aboutContainer {
+			width: 99%;
+			margin: 8px;
+			.about {
+				width: 95%;
+				height: auto;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 425px) {
+	.textTwo:nth-child(2n) {
+		display: none;
+	}
+}

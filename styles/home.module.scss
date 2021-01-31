@@ -1,0 +1,94 @@
+@import './config';
+
+//main page styles
+.container {
+	height: 100vh;
+	padding: 0 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url('../images/alan-carrillo-OJFI4qUmKWU-unsplash.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header {
+	font-family: 'Open Sans Condensed', sans-serif;
+	font-weight: 400;
+}
+
+.scroll {
+	margin-top: 125px;
+	margin-bottom: 50px;
+	width: 100vw;
+	display: flex;
+	justify-content: space-around;
+	font-size: 1.5rem;
+	a {
+		border: 1px solid #fff;
+		padding: 8px;
+		background-color: rgba(0, 0, 0, 0.4);
+	}
+}
+
+.link {
+	margin-top: 100px;
+	width: 30px;
+	height: 30px;
+}
+
+//contact form styles
+.mainContainer {
+	border: 1px solid #fff;
+	background-color: rgba(0, 0, 0, 0.5);
+	padding: 32px;
+	.header {
+		font-family: 'Raleway', sans-serif;
+	}
+	.form {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+	.input {
+		width: 90%;
+		font-family: 'Open Sans', sans-serif;
+		padding: 8px;
+		text-align: center;
+	}
+	.input:focus {
+		outline: none !important;
+		border-color: #113543;
+		box-shadow: 0 0 4px #113543;
+	}
+	.textarea {
+		text-align: center;
+		width: 90%;
+		height: 64px;
+		padding: 8px;
+		font-family: 'Open Sans', sans-serif;
+	}
+	.textarea:focus {
+		outline: none !important;
+		border-color: #113543;
+		box-shadow: 0 0 4px #113543;
+	}
+	.button {
+		margin-top: 32px;
+		border: none;
+		background-color: #fff;
+		padding: 8px;
+		width: 33%;
+		font-family: 'Raleway', sans-serif;
+	}
+	.button:focus {
+		outline: none !important;
+		border-color: #113543;
+		box-shadow: 0 0 4px #113543;
+	}
+}
+
