@@ -1,5 +1,6 @@
 import styles from '../styles/about.module.scss';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
 
 const containerVariants = {
 	hidden: {
@@ -58,15 +59,17 @@ const About = () => {
 							relationships are hallmarks to a happy, engaged life. Let's make
 							something cool together!
 						</p>
-						<motion.button
-							className={styles.button}
-							variants={buttonVariants}
-							whileHover='hover'>
-							reach out
-						</motion.button>
+						<Link href='/contact'>
+							<motion.button
+								className={styles.button}
+								variants={buttonVariants}
+								whileHover='hover'>
+								reach out
+							</motion.button>
+						</Link>
 					</div>
 					<svg
-                        className={styles.svg}
+						className={styles.svg}
 						stroke='currentColor'
 						fill='currentColor'
 						stroke-width='0'
