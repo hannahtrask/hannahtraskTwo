@@ -91,3 +91,14 @@
 		box-shadow: 0 0 4px #113543;
 	}
 }
+
+.navigation {
+	display: flex;
+	width: 100vw;
+	list-style: none;
+	padding-top: 4vh;
+	justify-content: space-around;
+	li:hover {
+		cursor: pointer;
+	}
+}

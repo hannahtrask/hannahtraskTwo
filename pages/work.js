@@ -3,6 +3,7 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
+import Navigation from '../components/navigation';
 
 const containerVariants = {
 	hidden: {
@@ -43,36 +44,7 @@ const Work = () => {
 				initial='hidden'
 				animate='visible'
 				className={styles.container}>
-				<ul className={styles.navigation}>
-					<Link href='/' className='link'>
-						<motion.li
-							whileHover={{ scale: 1.3, originX: 0, color: '#113543' }}
-							transition={{ type: 'spring', stiffness: 300 }}>
-							home
-						</motion.li>
-					</Link>
-					<Link href='/work' className='link'>
-						<motion.li
-							whileHover={{ scale: 1.3, originX: 0, color: '#113543' }}
-							transition={{ type: 'spring', stiffness: 300 }}>
-							projects
-						</motion.li>
-					</Link>
-					<Link href='/about'>
-						<motion.li
-							whileHover={{ scale: 1.3, originX: 0, color: '#113543' }}
-							transition={{ type: 'spring', stiffness: 300 }}>
-							about me
-						</motion.li>
-					</Link>
-					<Link href='/contact'>
-						<motion.li
-							whileHover={{ scale: 1.3, originX: 0, color: '#113543' }}
-							transition={{ type: 'spring', stiffness: 300 }}>
-							get in touch
-						</motion.li>
-					</Link>
-				</ul>
+					<Navigation />
 				<div className={styles.clients}></div>
 				<h1 className={styles.header}>PERSONAL GROWTH PROJECTS</h1>
 				<div className={styles.projects}>
@@ -83,7 +55,6 @@ const Work = () => {
 									<h1 className={styles.title}>{indiv.fields.title}</h1>
 									<Link href={indiv.fields.linkurl} passHref>
 										<a target='_blank' rel='noreferrer'>
-											
 											<img
 												className={styles.image}
 												src={indiv.fields.imagelink}

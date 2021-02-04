@@ -55,9 +55,10 @@ const About = () => {
 						<p className={styles.textTwo}>
 							I'm a whitewater raft guide turned{' '}
 							<strong>full stack web developer</strong> currently based in
-							Jackson Hole, Wyoming. I believe spontaneity, enthusiasm, and
-							relationships are hallmarks to a happy, engaged life. Let's make
-							something cool together!
+							Jackson Hole, Wyoming. I believe movement, enthusiasm,
+							relationships, and just <strong>plain old fun</strong> are
+							hallmarks to a happy, engaged life. Let's make something cool
+							together!
 						</p>
 						<Link href='/contact'>
 							<motion.button
@@ -65,6 +66,14 @@ const About = () => {
 								variants={buttonVariants}
 								whileHover='hover'>
 								reach out
+							</motion.button>
+						</Link>
+						<Link href='/'>
+							<motion.button
+								className={styles.button}
+								variants={buttonVariants}
+								whileHover='hover'>
+								back home
 							</motion.button>
 						</Link>
 					</div>

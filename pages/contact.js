@@ -1,6 +1,7 @@
 import styles from '../styles/home.module.scss';
 import { motion } from 'framer-motion';
 import emailjs from 'emailjs-com';
+import Link from 'next/link';
 
 const containerVariants = {
 	hidden: {
@@ -50,6 +51,7 @@ const Contact = () => {
 	return (
 		<>
 			<div className={styles.container}>
+				
 				<motion.div
 					className={styles.mainContainer}
 					variants={containerVariants}
@@ -69,27 +71,27 @@ const Contact = () => {
 							<input
 								className={styles.input}
 								type='text'
-								name='name'
+								name='full name'
 								placeholder='name'
 							/>
 							<br />
 							<input
 								className={styles.input}
 								type='text'
-								name='email'
+								name='email address'
 								placeholder='email'
 							/>
 							<br />
 							<textarea
 								className={styles.textarea}
 								name='message'
-								placeholder='leave your message here!'
+								placeholder='leave your message here! please let me know an appropriate way to contact you :)'
 							/>
 							<motion.input
 								variants={buttonVariants}
 								whileHover='hover'
 								type='submit'
-								value='send it'
+								value='send it!'
 								className={styles.button}
 							/>
 						</form>

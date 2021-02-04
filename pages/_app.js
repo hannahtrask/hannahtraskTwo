@@ -1,6 +1,7 @@
 import '../styles/globals.scss';
 import { motion } from 'framer-motion';
 
+
 const pageVariants = {
 	pageInitial: {
 		opacity: 0.6,
