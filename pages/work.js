@@ -34,6 +34,8 @@ const Work = () => {
 		});
 	};
 
+	const clients = [];
+
 	useEffect(() => getProjects(), []);
 
 	return (
@@ -44,6 +46,21 @@ const Work = () => {
 				animate='visible'
 				className={styles.container}>
 				<Navigation />
+				<h1 className={styles.header}>CLIENTS</h1>
+				<div className={styles.projects}>
+					{clients &&
+						clients.map((indiv) => {
+							return (
+								<h1>
+									this is a work in progress! check back soon for an updated
+									page :)
+								</h1>
+							);
+						})}
+					<h2>
+						This is a work in progress! Check back soon for an updated page :)
+					</h2>
+				</div>
 				<h1 className={styles.header}>PERSONAL GROWTH PROJECTS</h1>
 				<div className={styles.projects}>
 					{projs &&
