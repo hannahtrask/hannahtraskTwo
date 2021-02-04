@@ -1,0 +1,80 @@
+.container {
+	padding: 0 0.5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-image: url('../images/alan-carrillo-OJFI4qUmKWU-unsplash.jpg');
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.navigation {
+	display: flex;
+	width: 100vw;
+	list-style: none;
+	padding-top: 4vh;
+	justify-content: space-around;
+	li:hover {
+		cursor: pointer;
+	}
+}
+
+.header {
+	padding-top: 10vh;
+	font-weight: 400;
+	font-size: 3rem;
+	text-shadow: 2px 2px 4px #113543;
+	text-align: center;
+}
+
+.projects {
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	.project {
+		height: 400px;
+		margin: 2px;
+		border-radius: 4px;
+		background-color: rgba(0, 0, 0, 0.5);
+		padding: 8px;
+		max-width: 350px;
+
+		.title {
+			text-transform: uppercase;
+			text-align: center;
+			font-weight: 400;
+			letter-spacing: 1px;
+			text-shadow: 2px 2px 4px #113543;
+		}
+		.image {
+			width: 100%;
+			height: auto;
+			border: 1px solid #fff;
+			border-radius: 4px;
+		}
+		.description {
+			padding: 12px;
+			opacity: 0;
+			width: 100%;
+			transition: 1s ease;
+
+			cursor: pointer;
+			&:hover {
+				opacity: 1;
+				transform: rotate(360deg);
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	.description {
+		opacity: 1 !important;
+	}
+}

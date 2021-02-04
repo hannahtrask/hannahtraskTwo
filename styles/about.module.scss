@@ -75,6 +75,7 @@ $line-height: $clip-height - 5px;
 ** Apply styles to the parent element
 */
 .words {
+	cursor: pointer;
 	margin-right: 10vw;
 	margin-top: 20vh;
 	padding: 80px 0;
