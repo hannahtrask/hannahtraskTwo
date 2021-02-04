@@ -31,7 +31,6 @@ const Work = () => {
 		axios.get(url).then((res) => {
 			setProjs(res.data.items);
 			console.log(projs);
-			return projs;
 		});
 	};
 
@@ -44,8 +43,7 @@ const Work = () => {
 				initial='hidden'
 				animate='visible'
 				className={styles.container}>
-					<Navigation />
-				<div className={styles.clients}></div>
+				<Navigation />
 				<h1 className={styles.header}>PERSONAL GROWTH PROJECTS</h1>
 				<div className={styles.projects}>
 					{projs &&
@@ -53,14 +51,9 @@ const Work = () => {
 							return (
 								<div className={styles.project}>
 									<h1 className={styles.title}>{indiv.fields.title}</h1>
-									<Link href={indiv.fields.linkurl} passHref>
-										<a target='_blank' rel='noreferrer'>
-											<img
-												className={styles.image}
-												src={indiv.fields.imagelink}
-											/>
-										</a>
-									</Link>
+
+									<img className={styles.image} src={indiv.fields.imagelink} />
+
 									<p className={styles.description}>
 										{indiv.fields.description}
 									</p>
