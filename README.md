@@ -10,9 +10,7 @@ I'm a web developer, content creator, and outdoor enthusiast. I recently wrapped
 
 ## Current Projects
 
-I am currently working on honing my Next js skills by working on several projects— the first being a simple movie database app. See the code and repo [here](https://github.com/hannahtrask/MovieApp).
-
-I also have a client for whom I am designing a private portal for her physical therapy clinic— a full stack app hosted on AWS using MongoDB, Express, Node.js, and React.
+I recently was working on honing my Next js skills by working on several projects— the first being a simple movie database app. See the code and repo [here](https://github.com/hannahtrask/MovieApp).
 
 ### Skills - generally in order of how often I use them.
 * Shopify/Liquid/Ecommerce
