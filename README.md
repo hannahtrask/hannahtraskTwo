@@ -12,6 +12,8 @@ I'm a web developer, content creator, and outdoor enthusiast. I recently wrapped
 
 I recently was working on honing my Next js skills by working on several projects— the first being a simple movie database app. See the code and repo [here](https://github.com/hannahtrask/MovieApp).
 
+In addition to that, I am working with a team to build a CRM platform for an advertising agency, using mostly Amazon Web Services.
+
 ### Skills - generally in order of how often I use them.
 * Shopify/Liquid/Ecommerce
 * HTML5/CSS3
@@ -21,9 +23,6 @@ I recently was working on honing my Next js skills by working on several project
 * Headless CMS/RESTfulAPI
 * Express/MongoDB/Mongoose
 * PHP/MySQL
-
-<br>
-I am currently working on developing projects I'm passionate about, the most recent being a useful tool for backcountry skiers and snowboarders built with Nextjs. Next up, revamping my portfolio website!
 
 ### Woohoo a game!! Two truths and a lie...
 
@@ -39,4 +38,4 @@ I am currently working on developing projects I'm passionate about, the most rec
 
 ### And check out my resume..
 
-[Resume](https://drive.google.com/file/d/1OGLy67QGr6-Snzkvm0f0R7WsvlzOUvC8/view?usp=sharing)
+[Resume](https://drive.google.com/file/d/1INC4YLuJwwgzAV1x_Llm-qJmzYNcCA8O/view?usp=sharing)
