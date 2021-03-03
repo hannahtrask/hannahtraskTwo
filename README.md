@@ -34,7 +34,7 @@ In addition to that, I am working with a team to build a CRM platform for an adv
 
 * [LinkedIn](https://www.linkedin.com/in/hannahtrask/)
 * [Instagram](https://www.instagram.com/hannah_____catherine/)
-* [Personal Website](https://www.hannah-catherine-trask.com/)
+* [Personal Website](https://www.hannahtrasl.dev/)
 
 ### And check out my resume..
 
