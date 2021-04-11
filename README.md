@@ -8,12 +8,6 @@
 ## About me
 I'm a web developer, content creator, and outdoor enthusiast. I recently wrapped up a 480-hour software engineering immersive course through General Assembly. I'm passionate about a lot of things on top of web development: local activism, skiing, spending time with my friends, and whitewater boating.
 
-## Current Projects
-
-I recently was working on honing my Next js skills by working on several projects— the first being a simple movie database app. See the code and repo [here](https://github.com/hannahtrask/MovieApp).
-
-In addition to that, I am working with a team to build a CRM platform for an advertising agency, using mostly Amazon Web Services.
-
 ### Skills - generally in order of how often I use them.
 * Shopify/Liquid/Ecommerce
 * HTML5/CSS3
