@@ -18,17 +18,10 @@ I'm a web developer, content creator, and outdoor enthusiast. I recently wrapped
 * Express/MongoDB/Mongoose
 * PHP/MySQL
 
-### Woohoo a game!! Two truths and a lie...
-
-1. I lived for two months in Alaska, working as a housekeeper, bartender, and on site blanket knitter and menu designer for a heli-ski operation.
-2. For three months, I was a multi-day whitewater raft guide in Oregon and Idaho on the Wild and Scenic Rogue River and the Lower Fork of the Salmon River.
-3. In 2018, I gained an open water SCUBA diving certification from PADI in Utila, Honduras.
-
 ## Find me here
 
 * [LinkedIn](https://www.linkedin.com/in/hannahtrask/)
 * [Instagram](https://www.instagram.com/hannah_____catherine/)
-* [Personal Website](https://www.hannahtrasl.dev/)
 
 ### And check out my resume..
 
