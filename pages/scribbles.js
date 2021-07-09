@@ -30,18 +30,19 @@ const buttonVariants = {
 
 const Scribbles = () => {
     return (
-        <div className={styles.container}>
+        <>
 
 			<motion.div
 				initial='hidden'
 				animate='visible'
-				variants={containerVariants}>
+				variants={containerVariants}
+                className={styles.container}>
                 <Navigation />
 				<div className={styles.container}>
                     <h1 className={styles.header}>Come back soon to see samples of some of my published work!</h1>
 				</div>
 			</motion.div>
-		</div>
+		</>
     )
 }
 
