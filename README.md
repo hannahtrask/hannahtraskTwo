@@ -25,4 +25,4 @@ I'm a web developer, content creator, and outdoor enthusiast. I recently wrapped
 
 ### And check out my resume..
 
-[Resume](https://drive.google.com/file/d/1nqTQwV1mSDBIU1_Vmf8hUqatkL5NMA4w/view?usp=sharing)
+[Resume](https://drive.google.com/file/d/1APmdKq9KA8P3-v1u9tkh7VBXr6Tulfg6/view?usp=sharing)

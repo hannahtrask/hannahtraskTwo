@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 import Navigation from '../components/navigation';
 
 import { makeStyles } from '@material-ui/core/styles';
-import Card from '@material-ui/core/Card';
+// import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 
 import CardContent from '@material-ui/core/CardContent';
