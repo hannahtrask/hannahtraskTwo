@@ -49,6 +49,7 @@ const useStyles = makeStyles({
   },
   text: {
 	color: 'white',
+	fontFamily: 'Open Sans Condensed, sans-serif',
   },
   image: {
 	borderTopLeftRadius: '25px',
@@ -98,7 +99,7 @@ const Work = () => {
 					</h2>
 				</div>
 				<h1 className={styles.header}>PERSONAL GROWTH PROJECTS</h1>
-				<p className={styles.sidebar}>These projects were all built during and following my time at General Assembly as a student.</p>
+				<p className={styles.sidebar}>Built between November 2020 and January 2021</p>
 				<div className={styles.projects}>
 					{projs &&
 						projs.map((indiv) => {
