@@ -55,7 +55,7 @@ const About = () => {
 						<p className={styles.textTwo}>
 							I'm a whitewater raft guide turned{' '}
 							<strong>full stack web developer</strong> currently based in
-							Jackson Hole, Wyoming. I believe there is beauty, fun and magic everywhere, and <strong>isn't always immediately obvious</strong>. All of my work includes hidden treats.. see what you can find!
+							Jackson Hole, Wyoming. I believe there is beauty, fun and magic everywhere, and it <strong>isn't always immediately obvious</strong>. Much of my work includes hidden treats.. see what you can find on this page!
 						</p>
 						<Link href='/contact'>
 							<motion.button

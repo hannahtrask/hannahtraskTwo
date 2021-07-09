@@ -86,14 +86,17 @@ export default function Home() {
 					variants={buttonVariants}
 					className={styles.scroll}>
 					<motion.div variants={item} whileHover='hover'>
-						<Link href='/contact'>GET IN TOUCH</Link>
+						<Link href='/contact'>CHAT</Link>
 					</motion.div>
 					<motion.div variants={item} whileHover='hover'>
-						<Link href='/work'>MY WORK</Link>
+						<Link href='/work'>DEV</Link>
 					</motion.div>
 					<motion.div variants={item} whileHover='hover'>
-						<Link href='/about'>ABOUT ME</Link>
-					</motion.div>
+						<Link href='/scribbles'>WORDS</Link>
+					</motion.div>	
+					<motion.div variants={item} whileHover='hover'>
+						<Link href='/about'>ABOUT</Link>
+					</motion.div>			
 				</motion.div>
 			</div>
 		</>

@@ -16,21 +16,28 @@ const Navigation = () => {
 					<motion.li
 						whileHover={{ scale: 1.3, originX: 0, color: '#B2C3CE' }}
 						transition={{ type: 'spring', stiffness: 300 }}>
-						projects
+						dev
+					</motion.li>
+				</Link>
+				<Link href='/scribbles'>
+					<motion.li
+						whileHover={{ scale: 1.3, originX: 0, color: '#B2C3CE' }}
+						transition={{ type: 'spring', stiffness: 300 }}>
+						words
 					</motion.li>
 				</Link>
 				<Link href='/about'>
 					<motion.li
 						whileHover={{ scale: 1.3, originX: 0, color: '#B2C3CE' }}
 						transition={{ type: 'spring', stiffness: 300 }}>
-						about me
+						about
 					</motion.li>
 				</Link>
 				<Link href='/contact'>
 					<motion.li
 						whileHover={{ scale: 1.3, originX: 0, color: '#B2C3CE' }}
 						transition={{ type: 'spring', stiffness: 300 }}>
-						get in touch
+						chat
 					</motion.li>
 				</Link>
 			</ul>
