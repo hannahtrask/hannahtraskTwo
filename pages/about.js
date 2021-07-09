@@ -34,9 +34,8 @@ const About = () => {
 			<motion.div
 				initial='hidden'
 				animate='visible'
-				variants={containerVariants}
-				className={styles.container}>
-				<div>
+				variants={containerVariants}>
+				<div className={styles.container}>
 					<div className={styles.aboutContainer}>
 						<h1 className={styles.header}>hey, I'm HANNAH!</h1>
 						<img
