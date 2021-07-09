@@ -1,5 +1,4 @@
 import '../styles/globals.scss';
-import { motion } from 'framer-motion';
 
 
 const pageVariants = {
@@ -14,13 +13,13 @@ const pageVariants = {
 
 function MyApp({ Component, pageProps, router }) {
 	return (
-		<motion.div
+		<div
 			key={router.route}
 			initial='pageInitial'
 			animate='pageAnimate'
 			variants={pageVariants}>
 			<Component {...pageProps} />
-		</motion.div>
+		</div>
 	);
 }
 

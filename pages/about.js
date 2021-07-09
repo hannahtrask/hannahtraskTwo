@@ -46,19 +46,16 @@ const About = () => {
 						<p className={styles.textTwo}>
 							And I believe in{' '}
 							<strong>simple, clean designs and programs</strong>. Creative
-							alternatives and functional programming is my main objective. The
+							alternatives and interesting, eye catching, fun UI is my objective. The
 							internet is a space where all walks of life can connect— from our
 							couch to the other side of the world. Connections fuel the human
 							experience, and I am here to <strong>bridge the gap</strong>{' '}
-							between technology and daily life.
+							between the digital and the concrete.
 						</p>
 						<p className={styles.textTwo}>
 							I'm a whitewater raft guide turned{' '}
 							<strong>full stack web developer</strong> currently based in
-							Jackson Hole, Wyoming. I believe movement, enthusiasm,
-							relationships, and just <strong>plain old fun</strong> are
-							hallmarks to a happy, engaged life. Let's make something cool
-							together!
+							Jackson Hole, Wyoming. I believe there is beauty, fun and magic everywhere, and <strong>isn't always immediately obvious</strong>. All of my work includes hidden treats.. see what you can find!
 						</p>
 						<Link href='/contact'>
 							<motion.button
