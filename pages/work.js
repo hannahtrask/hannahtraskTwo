@@ -1,9 +1,18 @@
 import styles from '../styles/work.module.scss';
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import Link from 'next/link';
+
 import { motion } from 'framer-motion';
 import Navigation from '../components/navigation';
+
+import { makeStyles } from '@material-ui/core/styles';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
+
+import Typography from '@material-ui/core/Typography';
 
 const containerVariants = {
 	hidden: {
@@ -21,8 +30,35 @@ const containerVariants = {
 	},
 };
 
+const useStyles = makeStyles({
+  root: {
+    maxWidth: 345,
+	backgroundColor: 'rgba(0, 0, 0, 0.4)',
+	margin: '10px',
+	borderRadius: '25px'
+  },
+  label: {
+	background: 'linear-gradient(45deg, #000009 30%, #fff 90%)',
+    borderRadius: 3,
+    border: 0,
+	margin: '0 auto',
+    color: 'white',
+    height: 48,
+    padding: '0 30px',
+    boxShadow: '0 3px 5px 2px rgba(17, 53, 67, .3)',
+  },
+  text: {
+	color: 'white',
+  },
+  image: {
+	borderTopLeftRadius: '25px',
+	borderTopRightRadius: '25px'
+  }
+});
+
 const Work = () => {
 	const [projs, setProjs] = useState([]);
+	const classes = useStyles();
 
 	const url =
 		'https://cdn.contentful.com/spaces/vliau3tc6b7n/environments/master/entries?access_token=TOc124hNXrbySDs4bStAGA7_rI5Fcn7Dtwr-yNBn4tE';
@@ -62,19 +98,33 @@ const Work = () => {
 					</h2>
 				</div>
 				<h1 className={styles.header}>PERSONAL GROWTH PROJECTS</h1>
+				<p className={styles.sidebar}>These projects were all built during and following my time at General Assembly as a student.</p>
 				<div className={styles.projects}>
 					{projs &&
 						projs.map((indiv) => {
 							return (
-								<div className={styles.project}>
-									<h1 className={styles.title}>{indiv.fields.title}</h1>
-
-									<img className={styles.image} src={indiv.fields.imagelink} />
-
-									<p className={styles.description}>
-										{indiv.fields.description}
-									</p>
-								</div>
+								<motion.Card variants={containerVariants} 
+											 initial='hidden' 
+											 animate='visible' 
+											 className={classes.root}>
+      								<CardActionArea>
+        								<CardMedia
+											className={classes.image}
+          									component="img"
+          									height="140"
+          									image={indiv.fields.imagelink}
+											href={indiv.fields.linkurl}
+        									/>
+        								<CardContent>
+          									<Typography gutterBottom variant="h5" component="h2" className={classes.text}>
+            									{indiv.fields.title}
+          									</Typography>
+          									<Typography variant="body2" color="textSecondary" component="p" className={classes.text}>
+            									{indiv.fields.description}
+          									</Typography>
+        								</CardContent>
+      								</CardActionArea>
+    							</motion.Card>
 							);
 						})}
 				</div>
