@@ -82,7 +82,7 @@ const Work = () => {
 				animate='visible'
 				className={styles.container}>
 				<Navigation />
-				<h1 className={styles.header}>CLIENTS</h1>
+				<h1 className={styles.header}>PROFESSIONAL WORK</h1>
 				<div className={styles.projects}>
 					{clients &&
 						clients.map((indiv) => {
@@ -103,18 +103,20 @@ const Work = () => {
 					{projs &&
 						projs.map((indiv) => {
 							return (
+
 								<motion.Card variants={containerVariants} 
 											 initial='hidden' 
 											 animate='visible' 
 											 className={classes.root}>
       								<CardActionArea>
+										<a href={indiv.fields.linkurl} target="_blank">
         								<CardMedia
 											className={classes.image}
           									component="img"
           									height="140"
           									image={indiv.fields.imagelink}
-											href={indiv.fields.linkurl}
         									/>
+										</a>
         								<CardContent>
           									<Typography gutterBottom variant="h5" component="h2" className={classes.text}>
             									{indiv.fields.title}
@@ -125,6 +127,7 @@ const Work = () => {
         								</CardContent>
       								</CardActionArea>
     							</motion.Card>
+					
 							);
 						})}
 				</div>
