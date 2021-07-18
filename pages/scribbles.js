@@ -77,7 +77,7 @@ const Scribbles = () => {
 				animate='visible'
 				className={styles.container}>
 				<Navigation />
-				<h1 className={styles.header}>#professional-work</h1>
+				<h1 className={styles.header}>#published-writing</h1>
 				<div className={styles.projects}>
 					{writing &&
 						writing.map((indiv) => {
