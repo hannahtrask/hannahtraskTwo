@@ -70,17 +70,15 @@ const Scribbles = () => {
 
 	useEffect(() => getWriting(), []);
     return (
-        <>
-
+		<>
 			<motion.div
+				variants={containerVariants}
 				initial='hidden'
 				animate='visible'
-				variants={containerVariants}
-                className={styles.container}>
-                <Navigation />
-				<div className={styles.container}>
-					<h1 className={styles.header}>#published-writing</h1>
-					<div className={styles.projects}>
+				className={styles.container}>
+				<Navigation />
+				<h1 className={styles.header}>#professional-work</h1>
+				<div className={styles.projects}>
 					{writing &&
 						writing.map((indiv) => {
 							return (
@@ -111,11 +109,9 @@ const Scribbles = () => {
         								</CardContent>
       								</CardActionArea>
     							</motion.Card>
-					
 							);
 						})}
-				</div>
-				</div>
+				</div>	
 			</motion.div>
 		</>
     )
