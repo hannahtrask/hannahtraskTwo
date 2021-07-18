@@ -111,7 +111,9 @@ const Scribbles = () => {
     							</motion.Card>
 							);
 						})}
-				</div>	
+				</div>
+				<h1 className={styles.header}>#creative-writing</h1>
+				<h2>Another work in progress. Feel free to check back soon to see some of my creative narratives and longer essay pieces!</h2>
 			</motion.div>
 		</>
     )
