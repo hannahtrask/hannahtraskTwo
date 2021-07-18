@@ -6,7 +6,7 @@
 [![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=hannahtrask&layout=compact&theme=jolly)](https://github.com/hannahtrask/github-readme-stats)
 
 ## About me
-I'm a web developer, content creator, and outdoor enthusiast. I recently wrapped up a 480-hour software engineering immersive course through General Assembly. I'm passionate about a lot of things on top of web development: local activism, skiing, spending time with my friends, and whitewater boating.
+I'm a web developer, content creator, and outdoor enthusiast. I completed 480-hour software engineering immersive course through General Assembly in the fall of 2020 and am currently working as a freelance developer. I'm passionate about a lot of things on top of web development: local activism, skiing, spending time with my friends, and whitewater boating.
 
 ### Skills - generally in order of how often I use them.
 * Shopify/Liquid/Ecommerce
