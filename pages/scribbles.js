@@ -64,9 +64,7 @@ const Scribbles = () => {
 
 	const getWriting = () => {
 		axios.get(url).then((res) => {
-			console.log('success')
 			setWriting(res.data.items);
-			console.log(writing);
 		});
 	};
 
@@ -81,7 +79,6 @@ const Scribbles = () => {
                 className={styles.container}>
                 <Navigation />
 				<div className={styles.container}>
-                    <h1 className={styles.header}>Come back soon to see samples of some of my published work!</h1>
 					<div className={styles.projects}>
 					{writing &&
 						writing.map((indiv) => {
