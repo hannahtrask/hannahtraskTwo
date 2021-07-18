@@ -67,7 +67,7 @@ const Work = () => {
 	const getProjects = () => {
 		axios.get(url).then((res) => {
 			setProjs(res.data.items);
-			console.log(projs);
+			console.log('projs: ', projs);
 		});
 	};
 
