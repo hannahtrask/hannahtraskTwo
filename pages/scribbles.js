@@ -79,6 +79,7 @@ const Scribbles = () => {
                 className={styles.container}>
                 <Navigation />
 				<div className={styles.container}>
+					<h1 className={styles.header}>#published-writing</h1>
 					<div className={styles.projects}>
 					{writing &&
 						writing.map((indiv) => {

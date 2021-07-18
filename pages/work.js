@@ -82,7 +82,7 @@ const Work = () => {
 				animate='visible'
 				className={styles.container}>
 				<Navigation />
-				<h1 className={styles.header}>PROFESSIONAL WORK</h1>
+				<h1 className={styles.header}>#professional-work</h1>
 				<div className={styles.projects}>
 					{clients &&
 						clients.map((indiv) => {
@@ -97,7 +97,7 @@ const Work = () => {
 						This is a work in progress! Check back soon for an updated page :)
 					</h2>
 				</div>
-				<h1 className={styles.header}>PERSONAL GROWTH PROJECTS</h1>
+				<h1 className={styles.header}>#personal-growth-projects</h1>
 				<p className={styles.sidebar}>Built between November 2020 and January 2021</p>
 				<div className={styles.projects}>
 					{projs &&
