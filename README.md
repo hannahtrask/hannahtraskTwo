@@ -22,6 +22,7 @@ I'm a web developer, content creator, and outdoor enthusiast. I completed 480-ho
 
 * [LinkedIn](https://www.linkedin.com/in/hannahtrask/)
 * [Instagram](https://www.instagram.com/hannah_____catherine/)
+* [Portfolio Site](https://www.hannahtrask.dev/)
 
 ### And check out my resume..
 
